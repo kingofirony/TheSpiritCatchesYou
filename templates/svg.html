@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<embed src="../static/soundtrack.wav" autostart="true" loop="true" hidden="true" id = "music">
+<style>
+body {background-image:url('../static/hmong_play.jpg');background-size:100% 100%;}
+
+h1{text-shadow: 0px 2px 3px #555;
+font-size:2.5em;
+}
+a{color:white;}
+#instructions{width:30%;background: #FFFFFF;
+opacity:.9;
+margin:5px;
+border-radius: 15px;
+display: inline-block;}
+</style>
+<body><center>
+<h1> Return To Your Placenta</h1>
+<h3>According to the Hmong your placenta is your first and finest garment.<br> Help this soul get back to it's placenta. </h3>
+<div id='start-game-div'>
+<h3 id='instructions'>Move the soul by pressing the W(to move up) and S(to move down) keys  on your keyboard. Get through the red soul opening at the end of the terrain to keep moving towards your placenta. Good Luck!</h3>
+<br><button id='start-game'>Start The Game</button></div>
+<h1 id="score">Score: 0</h1><br>
+<center><img id='jacket' src='../static/jacket.jpg'width=30% height=30%></center>
+<svg id='svg-canvas' xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="400">
+  <image id='back-image' xlink:href="../static/mountains.jpg" x=0 y=0 height=400 width=700 />
+<image xlink:href="../static/soul.png" x=0 y=0 height=100 width=100 id="sprite" />
+<image xlink:href="../static/bloody.png" x=0 y=0 height=0 width=75 id="sprite2" />
+
+<rect x=500 y=0 width=30 height=400 fill="yellow" />
+<rect x=500 y=200 width=30 height=90 fill="red" id = "hole" />
+</svg>
+
+</center>
+
+<a href='/about.html'>About</a>
+
+<script src="../static/jquery.js"></script>
+<script src="../static/svg.js"></script>
+
+
+
+</html>
